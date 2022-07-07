@@ -16,10 +16,12 @@ let buttons = "";
 for (i = 0; i < 64; i++){
 buttons = buttons + '<button type="button" class="white"></button>\n'
 }
-buttons = buttons + "<br>";
 
 function addButtons(){
 const div = document.createElement("div");
 div.innerHTML = buttons;
 document.getElementById("div").appendChild(div);
+
+const br = document.createElement("br");
+document.insertAfter(br, div);
 }
