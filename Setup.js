@@ -16,6 +16,7 @@ let buttons = "";
 for (i = 0; i < 64; i++){
 buttons = buttons + '<button type="button" class="white"></button>\n'
 }
+buttons = buttons + "<br>";
 
 function addButtons(){
 const div = document.createElement("div");
